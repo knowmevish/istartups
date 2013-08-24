@@ -1,5 +1,12 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+	.container
+		h1.page-header= title
+		.searchbar.row
+			.span4
+				input.orgname.input-xlarge(type='text', placeholder='Company Name')
+			.span4
+				button.search.btn.btn-primary(type='button') Search
+		
+		.companycontent.row
