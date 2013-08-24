@@ -15,7 +15,7 @@ $(document).ready(function() {
 			$.ajax({
 				type:'GET',
 				url:'/getcompany',
-				data: {company:company_name}
+				data: {company:company_name},
 				success: function(response) {
 					console.log("response:",response);
 				}
